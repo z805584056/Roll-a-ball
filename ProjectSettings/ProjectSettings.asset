@@ -647,7 +647,7 @@ PlayerSettings:
   cloudServicesEnabled:
     UNet: 1
   facebookSdkVersion: 7.9.4
-  apiCompatibilityLevel: 2
+  apiCompatibilityLevel: 3
   cloudProjectId: cce5a879-041b-46c2-af80-22c97c5663cb
   projectName: Roll a Ball
   organizationId: siqibee

@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour {
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         rb.AddForce(movement*speed);
+
     }
 
 
@@ -59,14 +60,20 @@ public class PlayerController : MonoBehaviour {
         redCountText.text = "Red Cube: " + RedCount.ToString();
         TotalCount = count - RedCount;
         totalCountText.text = "Your Total Score: " + TotalCount.ToString();
-        
-        if ( count >= 12)
-            {
-                winText.text = "You Finished with a score of: " + TotalCount.ToString();
-            }
 
-    }
+        if (count == 12)
+        {
+            transform.position = new Vector3(-3.0f, -17.0f, -15.0f);
 
+        }
+
+        else if (count >= 24)
+        {
+
+            winText.text = "You Finished with a score of: " + TotalCount.ToString();
+        }
+
+        }
 
 
 
